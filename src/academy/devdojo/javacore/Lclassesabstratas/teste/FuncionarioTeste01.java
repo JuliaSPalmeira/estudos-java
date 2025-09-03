@@ -10,6 +10,7 @@ public class FuncionarioTeste01 {
        Dev desenvolvedor = new Dev(12000,"touya");
         System.out.println(gerente);
         System.out.println(desenvolvedor);
-
+        gerente.imprime();
+        desenvolvedor.imprime();
     }
 }
