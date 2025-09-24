@@ -1,30 +1,30 @@
 package academy.devdojo.javacore.Oexception.runtime.teste;
 
-public class RuntimeExceptionTeste03 {
-    public static void main(String[] args) {
-        abreConexao();
-    }
-       private static String abreConexao() {
-           try {
-               System.out.println("Abrindo Arquivo");
-               System.out.println("escrevendo dados no arquivo");
-               return "conexão aberta";
-           } catch (Exception e) {
-               e.printStackTrace();
-           } finally {
-               System.out.println("fechando recurso liberado pelo so");
-           }
-           return null;
-       }
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
 
-    private static void abreConexao2() {
-        try {
-            System.out.println("Abrindo Arquivo");
-            System.out.println("escrevendo dados no arquivo");
-        } finally {
-            System.out.println("fechando recurso liberado pelo so");
-        }
-        // caso especifico n da pra fazer nada com a exeção e tratar de alguma forma e fechar a conexão
+public class RuntimeExceptionTeste04 {
+    public static void main(String[] args){
+      try{
+            throw new RuntimeException();
+      }catch(ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException   e){
+          System.out.println("dentro do arrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException ");
+      }catch(RuntimeException e){
+          System.out.println("Dentro do RuntimeException ");
+      }
+
+
+      try{
+          talvezLanceException();
+      }catch (SQLException | FileNotFoundException e){
+          e.printStackTrace();
+      }
+
+    }
+    private static void talvezLanceException() throws SQLException, FileNotFoundException{
 
     }
 }
+// pergunta eu coloquei o erro mas como ele acha o erro sozinho
+// , pra colcoar mais de uma exceção
