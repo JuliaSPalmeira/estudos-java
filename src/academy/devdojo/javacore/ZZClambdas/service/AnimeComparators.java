@@ -1,6 +1,6 @@
-package academy.devdojo.javacore.ZZZlambdas.service;
+package academy.devdojo.javacore.ZZClambdas.service;
 
-import academy.devdojo.javacore.ZZZlambdas.dominio.Anime;
+import academy.devdojo.javacore.ZZClambdas.dominio.Anime;
 
 public class AnimeComparators {
     public static int compareByTitle(Anime a1, Anime a2){

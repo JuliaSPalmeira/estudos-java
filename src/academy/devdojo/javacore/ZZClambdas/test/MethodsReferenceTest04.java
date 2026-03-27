@@ -1,7 +1,7 @@
-package academy.devdojo.javacore.ZZZlambdas.test;
+package academy.devdojo.javacore.ZZClambdas.test;
 
-import academy.devdojo.javacore.ZZZlambdas.dominio.Anime;
-import academy.devdojo.javacore.ZZZlambdas.service.AnimeComparators;
+import academy.devdojo.javacore.ZZClambdas.dominio.Anime;
+import academy.devdojo.javacore.ZZClambdas.service.AnimeComparators;
 
 import java.util.ArrayList;
 import java.util.List;

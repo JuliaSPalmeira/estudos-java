@@ -1,4 +1,4 @@
-package academy.devdojo.javacore.ZZZlambdas.test;
+package academy.devdojo.javacore.ZZClambdas.test;
 
 import java.util.List;
 import java.util.function.Consumer;
