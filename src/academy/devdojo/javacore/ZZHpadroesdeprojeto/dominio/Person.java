@@ -1,7 +1,7 @@
 package academy.devdojo.javacore.ZZHpadroesdeprojeto.dominio;
 
 public class Person {
-    private String firstName;
+    public String firstName;
     private String lastName;
     private String userName;
     private String email;
